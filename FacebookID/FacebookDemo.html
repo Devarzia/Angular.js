@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook ID Demo</title>
+    <script src="angular.min.js"></script>
+    <script src="FacebookID.js"></script>
+</head>
+<body>
+    <div id="title">
+        <h2>Angular FacebookID Demo</h2>
+    </div>
+    <div id="message">
+        <h3>Wanna See something cool?</h3>
+        <span>This is what you have to do: </span>
+        <ol>
+            <li>Login to Facebook</li>
+            <li>Find your user ID (usually after "www.facebook.com/" in the URL)</li>
+            <li>Type your id in the textbox below</li>
+            <li>Watch what happens</li>
+        </ol>
+    </div>
+    <div id="content" ng-app="FacebookApp">
+        <form>
+            <label for="txtID">Facebook ID: </label>
+            <input type="text" id="txtID" ng-model="ID" />
+            <br />
+            <span><img ng-src="https://graph.facebook.com/{{ID}}/picture?type=normal" /></span>
+        </form>
+    </div>
+    <footer>
+        <h3>Pretty Cool huh??</h3>
+    </footer>
+</body>
+</html>

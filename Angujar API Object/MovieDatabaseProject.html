@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AngularJS: Searching for Movies</title>
+    <link rel="stylesheet" href="AngularMovieDatabase.css" />
+</head>
+<body ng-app="movieApp">
+
+    <!-- Dive holding the controller content-->
+    <div ng-controller="Movie">
+        <h1>Movie Database</h1>
+        <!-- Input Controls-->
+        <input type="text" id="searchText" ng-model="title" placeholder="Enter Movie Title" />
+        <input type="button" id="GetArtistData" value="Search" ng-click="movie(title)" />
+        <br />
+
+        <!-- Div holding The artist selection-->
+        <div>
+            Movie Searched: {{title}}
+        </div>
+
+        <!-- Div Holding Movie info Result-->
+        <div>
+            Movie Info: <pre>{{MovieInfo}}</pre>
+        </div>
+    </div>
+
+    <!-- import JavaScript libraries -->
+    <script src="angular.min.js"></script>
+    <script src="GetMovieData.js"></script>
+</body>
+</html>

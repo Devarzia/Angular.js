@@ -1,0 +1,29 @@
+﻿body 
+{
+    background: -webkit-radial-gradient(circle, black, green);
+    color: white;
+
+}
+input button
+{
+    color: black;
+    font-size:large;
+}
+
+input text
+{
+    color: black;
+    margin: 0 5px 10px 0;
+}
+
+h1
+{
+    color: white;
+    text-shadow: 2px 2px green;
+    text-align: center;
+}
+
+div
+{
+    margin: 10px 0 10px 0;
+}
